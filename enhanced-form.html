@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Accessible Web Page</title>
+</head>
+<body>
+    <header>
+        <h1>My Accessible Web Page</h1>
+        <nav aria-label="Primary">
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Our Services</a></li>
+                <li><a href="#getting-started">Getting Started</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>            
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We specialize in creating accessible web solutions that work for everyone.</p>
+            <ul>
+                <li>Founded in 2020</li>
+                <li>50+ satisfied clients</li>
+                <li>WCAG 2.1 AA compliant</li>
+            </ul>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <dl>
+                <dt>Web Accessibility Audits</dt>
+                <dd>Comprehensive evaluation of your website's accessibility</dd>
+                <dt>HTML5 Development</dt>
+                <dd>Semantic, standards-compliant websites</dd>
+                <dt>Accessibility Training</dt>
+                <dd>Team workshops on inclusive design</dd>
+            </dl>
+        </section>
+
+        <section id="getting-started">
+            <h2>Getting Started</h2>
+            <ol>
+                <li>Review our service offerings</li>
+                <li>Contact us for a free consultation</li>
+                <li>Receive a customized proposal</li>
+                <li>Begin your project</li>
+            </ol>
+        </section>
+
+        <section id="pricing">
+            <h2>Pricing Plans</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Starter</th>
+                        <th>Professional</th>
+                        <th>Enterprise</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Basic Audit</td>
+                        <td>$500</td>
+                        <td>$1000</td>
+                        <td>$2500</td>
+                    </tr>
+                    <tr>
+                        <td>Full Report</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td>Remediation Plan</td>
+                        <td>✗</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="media">
+            <h2>Media Gallery</h2>
+            <figure>
+                <img src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg" alt="Our team working together in an office" width="600">
+                <figcaption>Our accessibility specialists collaborating on a project</figcaption>
+            </figure>
+            <video controls width="600">
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-business-meeting-in-a-modern-office-space-4466-large.mp4" type="video/mp4">
+                Your browser does not support HTML5 video. Here is a <a href="https://assets.mixkit.co/videos/preview/mixkit-business-meeting-in-a-modern-office-space-4466-large.mp4">link to the video</a> instead.
+            </video>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Form</h2>
+            <form action="/submit" method="post">
+                <fieldset>
+                    <legend>Your Information</legend>
+                    
+                    <label for="fullname">Full Name *</label>
+                    <input type="text" id="fullname" name="fullname" required minlength="2" placeholder="Jane Doe">
+                    
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required placeholder="email@example.com">
+                    
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+                    
+                    <label for="service">Service Interest</label>
+                    <select id="service" name="service" required>
+                        <option value="">-- Select One --</option>
+                        <option value="audit">Accessibility Audit</option>
+                        <option value="training">Training</option>
+                        <option value="development">Development</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Message</legend>
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" required minlength="10" placeholder="How can we help you?"></textarea>
+                    
+                    <label>
+                        <input type="checkbox" name="subscribe" checked>
+                        Subscribe to newsletter
+                    </label>
+                </fieldset>
+
+                <button type="submit">Send Message</button>
+                <button type="reset">Clear Form</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 My Accessible Web Page. All rights reserved.</p>
+        <address>
+            Contact us at <a href="mailto:natyberhane0@gmail.com">natyberhane0@gmail.com</a>
+        </address>
+    </footer>
+</body>
+</html>
